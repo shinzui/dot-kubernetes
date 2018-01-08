@@ -2,10 +2,10 @@
 #
 # shinzui/kubernetes ellipsis package
 
-# The following hooks can be defined to customize behavior of your package:
-# pkg.install() {
-#     fs.link_files $PKG_PATH
-# }
+pkg.install() {
+  brew cask install minikube
+  brew install kubernetes-cli kubernetes-helm
+}
 
 # pkg.push() {
 #     git.push
