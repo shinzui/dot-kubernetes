@@ -4,7 +4,11 @@
 
 pkg.install() {
   brew cask install minikube
-  brew install kubernetes-cli kubernetes-helm
+  brew install kubernetes-cli kubernetes-helm kubectx stern
+
+  # minikube addons configure registry-creds
+
+  pip install kube-shell
 }
 
 # pkg.push() {
