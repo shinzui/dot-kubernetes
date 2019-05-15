@@ -3,9 +3,8 @@
 # shinzui/kubernetes ellipsis package
 
 pkg.install() {
-  brew install kubernetes-cli kubernetes-helm kubectx stern
-
-  # minikube addons configure registry-creds
+  brew tap thecasualcoder/stable
+  brew install kubernetes-cli kubernetes-helm kubectx stern kube-fzf
 
   pip install kube-shell
 }
