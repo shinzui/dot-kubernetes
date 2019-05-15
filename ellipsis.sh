@@ -3,7 +3,6 @@
 # shinzui/kubernetes ellipsis package
 
 pkg.install() {
-  brew cask install minikube
   brew install kubernetes-cli kubernetes-helm kubectx stern
 
   # minikube addons configure registry-creds
