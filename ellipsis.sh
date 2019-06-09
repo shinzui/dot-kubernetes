@@ -4,7 +4,8 @@
 
 pkg.install() {
   brew tap thecasualcoder/stable
-  brew install kubernetes-cli kubernetes-helm kubectx stern kube-fzf
+  brew tap derailed/k9s
+  brew install kubernetes-cli kubernetes-helm kubectx stern kube-fzf k9s
 
   pip install kube-shell
 }
